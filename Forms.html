@@ -16,27 +16,41 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+        <!--[Form for Sum of Sequences]-->
+        <!--[When submit is clicked, it opens dialog box]-->
         <form id="sumOf" onsubmit="openSum()">
+            <!--[Fieldset in case another form is needed]-->
             <fieldset>
+                <!--[Header to describe Form Function]-->
             <h3 id="sumHead">Sum of the Sequence from One Number to Another</h3>
+            <!--[First Number Label and Input]-->
             <div id="first">
                 <label for="fnum">First Number:</label><br>
                 <input type="text" id="fnum" name="fnum" value=""><br>
             </div>
+            <!--[Last Number Label and Input]-->
             <div id="last">
                 <label for="lnum">Last Number:</label><br>
                 <input type="text" id="lnum" name="lnum" value="">
             </div>
-            <input type="submit" value="Sum" class="clickable">
 
+            <!--[Submit Button]-->
+            <input type="submit" value="Sum" class="clickable">
+            
+            <!--[Dialog Box to show output of the Form - Sum of Sequences]-->
             <dialog id="sumOut">
+                <!--[Header for Answer]-->
                 <h3>Sum of the Sequence: </h3>
+                <!--[Answer Div]-->
                 <div id="sum"></div>
+                <!--[Button to close Dialog Box]-->
                 <button id="close" class="clickable">OK</button>
             </dialog>
             </fieldset>
         </form>
         
+        <!--[Javascript file for Forms Page]-->
         <script src="scripts.js" async defer></script>
     </body>
 </html>
