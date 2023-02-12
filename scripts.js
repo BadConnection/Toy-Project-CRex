@@ -29,16 +29,19 @@ function wordReverse() {
    
 }
 
-
+//Shows the Dialog Box for the form
 function openBox(output, answ, func){
     //Output dialog variable
     var dialogue = document.getElementById(output);
     var answer = document.getElementById(answ);
+    //Displays function return value
     answer.innerHTML = func;
     dialogue.show();
 
 }
 
+
+//Displays Sum Form on Submit
 const sumForm = document.getElementById("sumForm");
 //Submit Event Listener to open Dialog Box
 sumForm.addEventListener("submit", (e) => {
@@ -47,6 +50,7 @@ sumForm.addEventListener("submit", (e) => {
     openBox("sumOut", "sum", sumOfSequence());
 })
 
+//Displays reverse form on submit
 const reverseForm = document.getElementById("reverseForm");
 //Submit Event Listener to open Dialog Box
 reverseForm.addEventListener("submit", (e) => {

@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: Roboto;
+}
+
+/*Responsive Layout*/
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
 /*Button Appearance for Any Button on Page - Clickable Class*/
 .clickable{
     appearance: none;
@@ -9,11 +23,11 @@
     color: #fff;
     cursor: pointer;
     display: inline-block;
-    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-family: Roboto;
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
-    padding: 6px 16px;
+    padding: 6px 20px;
     margin-top: 10px;
     position: relative;
     text-align: center;
@@ -57,4 +71,23 @@
 
   dialog{
     z-index: 10;
+  }
+
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  fieldset {
+    border: none;
+  }
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
   }
