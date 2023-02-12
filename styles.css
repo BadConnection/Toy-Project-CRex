@@ -2,6 +2,8 @@
 
 body {
   font-family: Roboto;
+  display: flex;
+  justify-content: center;
 }
 
 /*Responsive Layout*/
@@ -65,14 +67,18 @@ body {
     box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
   }
 
+
+  /*Spaces out the Input Boxes*/
   input{
     margin: 5px;
   }
 
+/*Dialog boxes are now on top of everything when opened*/
   dialog{
     z-index: 10;
   }
 
+  /*Formats input box to look clean*/
   input[type=text], select {
     width: 100%;
     padding: 12px 20px;
@@ -83,11 +89,54 @@ body {
     box-sizing: border-box;
   }
 
+  /*Positions sumForm on top of reverseForm*/
+  #sumForm{
+    position: absolute;
+  }
+
+  #reverseForm{
+    position: relative;
+    top: 350px;
+  }
+
+  /*Clean Form Look for All Devices*/
+  form{
+    width: 100%;
+  }
+
+  /*Takes away border for Fieldsets*/
   fieldset {
     border: none;
   }
 
+  /*Puts the label of the input boxes to the left*/
   label {
     padding: 12px 12px 12px 0;
     display: inline-block;
+  }
+
+  /*Inventory is in the center and is able to scroll if more items are added*/
+  .inventory {
+    max-width: 700px;
+    overflow: scroll;
+    justify-content: center;
+  }
+
+  /*Colors table border and puts the borders together*/
+  table {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+  }
+  
+  /*Border Color and Padding for data in table*/
+  td, th {
+    white-space: nowrap;
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+
+  /*Color and Header Stays when scrolling*/
+  th {
+    background-color: #eee;
+    position: sticky;
   }
