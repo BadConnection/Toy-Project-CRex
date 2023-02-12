@@ -50,3 +50,11 @@
     background-color: #0e6aed;
     box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
   }
+
+  input{
+    margin: 5px;
+  }
+
+  dialog{
+    z-index: 10;
+  }

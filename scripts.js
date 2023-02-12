@@ -19,27 +19,53 @@ function sumOfSequence(){
         return "Both Must Be A Number And First Number Must Be Smaller";
 }
 
-//Output dialog variable
-const dialog = document.getElementById("sumOut");
-//Open Dialog Box with Answer
-function openSum(){
-    const answer = document.getElementById("sum");
-    answer.innerHTML = sumOfSequence();
-    dialog.show();
+//Reverse Word Function
+function wordReverse() {
+
+    var input = document.getElementById("revWord").value;
+    var reverseWord = input.split("").reverse().join("");
+   
+    return reverseWord;
+   
 }
-//Form Variable
-const sumForm = document.getElementById("sumOf");
+
+
+function openBox(output, answ, func){
+    //Output dialog variable
+    var dialogue = document.getElementById(output);
+    var answer = document.getElementById(answ);
+    answer.innerHTML = func;
+    dialogue.show();
+
+}
+
+const sumForm = document.getElementById("sumForm");
 //Submit Event Listener to open Dialog Box
 sumForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    openSum();
+    openBox("sumOut", "sum", sumOfSequence());
 })
-//Close button variable
-const close = document.getElementById("close");
-//Close Event Listener to close Dialog Box
-close.addEventListener("click", (e) =>{
+
+const reverseForm = document.getElementById("reverseForm");
+//Submit Event Listener to open Dialog Box
+reverseForm.addEventListener("submit", (e) => {
     e.preventDefault();
+
+    openBox("revOut", "rev", wordReverse());
+})
+
+
+
+document.querySelectorAll('#close').forEach(item => {
+    item.addEventListener('click', event => {
+    event.preventDefault();
+
+    dialog = document.getElementById("sumOut");
+    dialog2 = document.getElementById("revOut");
+
     dialog.close();
+    dialog2.close();
     
+    })
 })
