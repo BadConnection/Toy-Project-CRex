@@ -74,6 +74,8 @@ body {
 /*Dialog boxes are now on top of everything when opened*/
   dialog{
     z-index: 10;
+    align-items: center;
+    text-align: center;
   }
 
   /*Formats input box to look clean*/
