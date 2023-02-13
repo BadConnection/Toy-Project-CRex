@@ -73,3 +73,4 @@ document.querySelectorAll('#close').forEach(item => {
     
     })
 })
+
