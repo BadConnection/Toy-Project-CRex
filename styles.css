@@ -2,6 +2,8 @@
 
 body {
   font-family: Roboto;
+  display: flex;
+  justify-content: center;
 }
 
 /*Responsive Layout*/
