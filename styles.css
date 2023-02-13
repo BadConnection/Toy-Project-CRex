@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: Roboto;
+  display: flex;
+  justify-content: center;
+}
+
+/*Responsive Layout*/
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/*Button Appearance for Any Button on Page - Clickable Class*/
+.clickable{
+    appearance: none;
+    background-color: #0049dc;
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 20px;
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+ 
+  .clickable:focus:not(:focus-visible):not(.focus-visible){
+    box-shadow: none;
+    outline: none;
+  }
+ 
+  .clickable:hover {
+    background-color: #044eb4;
+  }
+ 
+  .clickable:focus {
+    box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+    outline: none;
+  }
+ 
+  .clickable:disabled {
+    background-color: #94d3a2;
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+  }
+ 
+  .clickable:active {
+    background-color: #0e6aed;
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+  }
+
+
+  /*Spaces out the Input Boxes*/
+  input{
+    margin: 5px;
+  }
+
+/*Dialog boxes are now on top of everything when opened*/
+  dialog{
+    z-index: 10;
+  }
+
+  /*Formats input box to look clean*/
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  /*Positions sumForm on top of reverseForm*/
+  #sumForm{
+    position: absolute;
+  }
+
+  #reverseForm{
+    position: relative;
+    top: 350px;
+  }
+
+  /*Clean Form Look for All Devices*/
+  form{
+    width: 100%;
+  }
+
+  /*Takes away border for Fieldsets*/
+  fieldset {
+    border: none;
+  }
+
+  /*Puts the label of the input boxes to the left*/
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+
+  /*Inventory is in the center and is able to scroll if more items are added*/
+  .inventory {
+    max-width: 700px;
+    overflow: scroll;
+    justify-content: center;
+  }
+
+  /*Colors table border and puts the borders together*/
+  table {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+  }
+  
+  /*Border Color and Padding for data in table*/
+  td, th {
+    white-space: nowrap;
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+
+  /*Color and Header Stays when scrolling*/
+  th {
+    background-color: #eee;
+    position: sticky;
+  }
