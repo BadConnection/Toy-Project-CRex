@@ -1,3 +1,9 @@
+//Name Function
+function Name(){
+    //Retrieve Name value
+    var name = document.getElementById("fname").value;
+    return name;
+}
 
 //Sum Of Sequence Function
 function sumOfSequence(){
@@ -15,8 +21,9 @@ function sumOfSequence(){
         }
     return sum;
     }
-    else
+    else {
         return "Both Must Be A Number And First Number Must Be Smaller";
+    }
 }
 
 //Reverse Word Function
@@ -40,6 +47,13 @@ function openBox(output, answ, func){
 
 }
 
+const nameForm = document.getElementById("nameForm");
+
+nameForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    openBox("nameOut", "nameMsg", Name());
+})
 
 //Displays Sum Form on Submit
 const sumForm = document.getElementById("sumForm");
@@ -60,17 +74,17 @@ reverseForm.addEventListener("submit", (e) => {
 })
 
 
-
 document.querySelectorAll('#close').forEach(item => {
     item.addEventListener('click', event => {
     event.preventDefault();
 
     dialog = document.getElementById("sumOut");
     dialog2 = document.getElementById("revOut");
+    dialog3 = document.getElementById("nameOut");
 
     dialog.close();
     dialog2.close();
+    dialog3.close();
     
     })
 })
-
