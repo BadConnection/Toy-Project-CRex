@@ -1,4 +1,3 @@
-
 //Sum Of Sequence Function
 function sumOfSequence(){
                    
@@ -15,8 +14,9 @@ function sumOfSequence(){
         }
     return sum;
     }
-    else
+    else {
         return "Both Must Be A Number And First Number Must Be Smaller";
+    }
 }
 
 //Reverse Word Function
@@ -39,8 +39,6 @@ function openBox(output, answ, func){
     dialogue.show();
 
 }
-
-
 //Displays Sum Form on Submit
 const sumForm = document.getElementById("sumForm");
 //Submit Event Listener to open Dialog Box
@@ -60,7 +58,6 @@ reverseForm.addEventListener("submit", (e) => {
 })
 
 
-
 document.querySelectorAll('#close').forEach(item => {
     item.addEventListener('click', event => {
     event.preventDefault();
@@ -73,4 +70,3 @@ document.querySelectorAll('#close').forEach(item => {
     
     })
 })
-

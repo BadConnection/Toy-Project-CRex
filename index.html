@@ -2,12 +2,12 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Good Inc.</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
@@ -16,9 +16,60 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <em><p>Good Inc.</p></em>
-        <p>Hello</p>
-        
-        <script src="scripts.js" async defer></script>
+
+        <!--[Top of the Page]-->
+        <section>
+            <header>
+            <h1 class="head1">Good Inc.</h1>
+            <h2 class="header"><em>"We do Good Business"</em></h2>
+            </header>
+        </section>
+
+        <section>
+            <h3 class="header">Here at Good Inc. we pride ourselves in getting out to the public Good Food, Good Clothes, 
+                Good Services, and Good Supplies.</h3>
+        </section>
+
+        <section>
+            <!--[Form for Name]-->
+            <form id="nameForm">
+                <!--[Fieldset]-->
+                <fieldset>
+                <!--[Name Label and Input]-->
+                <div id="name">
+                    <label for="fname">Enter Name Here:</label>
+                    <input type="text" id="fname" name="fname" value=""><br>
+                </div>
+
+                <!--[Submit Button]-->
+                <input type="submit" value="Submit" class="clickable">
+
+                 <!--[Dialog Box to show output of the Form - Name Output]-->
+                <dialog id="nameOut">
+                    <!--[Header for Hello Message]-->
+                    <h3 class="header">Hello,
+                    <!--[Name Div]-->
+                    <div id="nameMsg"></div>
+                    </h3>
+                    <!--[Button to close Dialog Box]-->
+                    <button id="close" class="clickable">OK</button>
+                </dialog>
+                </fieldset>
+            </form>
+        </section>
+
+        <section>
+            <h4 class="header">Founder: Scott R. Franklin</h4>
+        </section>
+            
+        <section>
+            <h5 class="header">Phone: (806)6003-1230<br>
+                Email: goodinc.com<br>
+                Address: 1900 W 7th St, Plainview, Tx, 79072<br>
+                Kenneth L. Mattox School of Mathematics and Sciences<br>
+                Room 222 
+            </h5>
+        </section>
+        <script src="scripts2.js" async defer></script>
     </body>
 </html>

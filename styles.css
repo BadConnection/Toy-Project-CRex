@@ -6,6 +6,17 @@ body {
   justify-content: center;
 }
 
+.header{
+  text-align: center;
+  font-size: 25px;
+}
+
+.head1 {
+  font-size: 50 px;
+  display:flex;
+  justify-content: center;
+}
+
 /*Responsive Layout*/
 @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
@@ -120,7 +131,7 @@ body {
   /*Inventory is in the center and is able to scroll if more items are added*/
   .inventory {
     max-width: 700px;
-    overflow: scroll;
+    display: flex;
     justify-content: center;
   }
 
