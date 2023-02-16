@@ -11,6 +11,8 @@ body {
 
 .head1 {
   font-size: 50 px;
+  display:flex;
+  justify-content: center;
 }
 
 /*Responsive Layout*/
@@ -125,7 +127,7 @@ body {
   /*Inventory is in the center and is able to scroll if more items are added*/
   .inventory {
     max-width: 700px;
-    overflow: scroll;
+    display: flex;
     justify-content: center;
   }
 
@@ -133,8 +135,6 @@ body {
   table {
     border: 1px solid #ddd;
     border-collapse: collapse;
-    display: flex;
-    justify-content: center;
   }
   
   /*Border Color and Padding for data in table*/
