@@ -3,12 +3,12 @@ function sumOfSequence(){
                    
     let sum = 0.0;
     //Retrieve First and Last Number values
-    var firstNum=document.getElementById("fnum").value;
-    var lastNum=document.getElementById("lnum").value;
-    var step=document.getElementById("step").value;
+    var firstNum=parseInt(document.getElementById("fnum").value);
+    var lastNum=parseInt(document.getElementById("lnum").value);
+    var step=parseInt(document.getElementById("step").value);
 
     //Catch if not a number or if last is smaller or equal to first number
-    if (firstNum!=null && lastNum!=null && firstNum<lastNum){
+    if (firstNum!=null && lastNum!=null && firstNum<lastNum && step>0 && !isNaN(firstNum) && !isNaN(lastNum) && !isNaN(step)){
         //For loop for sequence
         let i = firstNum;
         while(i <= lastNum){
@@ -17,8 +17,17 @@ function sumOfSequence(){
         }
     return sum;
     }
+    else if (firstNum!=null && lastNum!=null && firstNum>lastNum && step<0 && !isNaN(firstNum) && !isNaN(lastNum) && !isNaN(step)){
+        //For loop for sequence
+        let i = firstNum;
+        while(i >= lastNum){
+            sum = parseInt(sum)+parseInt(i);
+            i = parseInt(i)+parseInt(step);
+        }
+    return sum;
+    }
     else {
-        return "Both Must Be A Number And First Number Must Be Smaller";
+        return "Invalid Input";
     }
 }
 
