@@ -5,11 +5,12 @@ function sumOfSequence(){
     //Retrieve First and Last Number values
     var firstNum=document.getElementById("fnum").value;
     var lastNum=document.getElementById("lnum").value;
+    var step=document.getElementById("step").value;
 
     //Catch if not a number or if last is smaller or equal to first number
     if (firstNum!=null && lastNum!=null && firstNum<lastNum){
         //For loop for sequence
-        for(let i = firstNum; i <= lastNum; i++){
+        for(let i = firstNum; i <= lastNum; i+=step){
             sum = parseInt(sum)+parseInt(i);
         }
     return sum;
