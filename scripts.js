@@ -10,8 +10,10 @@ function sumOfSequence(){
     //Catch if not a number or if last is smaller or equal to first number
     if (firstNum!=null && lastNum!=null && firstNum<lastNum){
         //For loop for sequence
-        for(let i = firstNum; i <= lastNum; i+=step){
+        let i = firstNum;
+        while(i <= lastNum){
             sum = parseInt(sum)+parseInt(i);
+            i = parseInt(i)+parseInt(step);
         }
     return sum;
     }
