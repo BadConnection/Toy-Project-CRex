@@ -109,7 +109,7 @@ body {
 
   #reverseForm{
     position: relative;
-    top: 350px;
+    top: 450px;
   }
 
   /*Clean Form Look for All Devices*/
@@ -130,9 +130,11 @@ body {
 
   /*Inventory is in the center and is able to scroll if more items are added*/
   .inventory {
-    max-width: 700px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+
   }
 
   /*Colors table border and puts the borders together*/
@@ -153,5 +155,17 @@ body {
     background-color: #eee;
     position: sticky;
   }
-
   
+  a{
+    left: 40%;
+  }
+
+  img {
+    height: 50px;
+  }
+
+  #rightalign{
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 30px;;
+  }
