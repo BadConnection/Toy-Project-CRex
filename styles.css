@@ -130,16 +130,18 @@ body {
 
   /*Inventory is in the center and is able to scroll if more items are added*/
   .inventory {
+    max-width: 700px;
+    align-items: center;
+    text-align: center;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 50vh;
-
   }
 
   /*Colors table border and puts the borders together*/
   table {
     border: 1px solid #ddd;
+    background-color: white;
     border-collapse: collapse;
   }
   
